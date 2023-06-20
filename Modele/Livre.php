@@ -21,7 +21,7 @@ class Livre extends Modele {
         $sql = 'SELECT l.id, l.titre, l.isbn, a.nom, a.prenom
         FROM livre l
         LEFT JOIN `auteur`a ON a.`id` = l.`ref_auteur`
-        WHERE l.`idLivre` = '. $idLivre;
+        WHERE l.`id` = '. $idLivre;
 
         $livres = $this->executerRequete($sql);
         return $livres;
