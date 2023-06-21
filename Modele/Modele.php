@@ -16,7 +16,7 @@ abstract class Modele {
         return $resultat;
     }
 
-    private function getBdd() {
+    public function getBdd() {
         if ($this->bdd == null) {
             $this->bdd = new PDO('mysql:host=host.docker.internal:3306;dbname=bibliotheque;charset=utf8',
                     'root', '',
@@ -24,5 +24,33 @@ abstract class Modele {
         }
         return $this->bdd;
     }
+
+
+
+
+private function estConnecte(){
+  return isset($_SESSION['id']);
+}
+
+private function connecter($id,$nom,$prenom){
+	$_SESSION['id']= $id; 
+	$_SESSION['nom']= $nom;
+	$_SESSION['prenom']= $prenom;
+}
+
+
+private function deconnecter(){
+	session_destroy();
+}
+
+
+
+private function ajouterErreur($msg){
+   if (! isset($_REQUEST['erreurs'])){
+      $_REQUEST['erreurs']=array();
+	} 
+   $_REQUEST['erreurs'][]=$msg;
+}
+
 
 }

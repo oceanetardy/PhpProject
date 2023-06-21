@@ -11,7 +11,6 @@ class Livre extends Modele {
         FROM livre l
         LEFT JOIN `auteur`a ON a.`id` = l.`ref_auteur`';
 
-        //Ajouter requete
         $livres = $this->executerRequete($sql);
         return $livres;
     }
