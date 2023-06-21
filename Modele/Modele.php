@@ -28,6 +28,8 @@ abstract class Modele {
 
 
 
+
+
 private function estConnecte(){
   return isset($_SESSION['id']);
 }

@@ -1,24 +1,20 @@
 /* Styles des divisions principales de la page */
 body{
-  background-color: #ddcc77;
-	background-image: url(imgs/FONDGLOBAL.jpg);
+  background-color: #f4efd7;
 	background-repeat: repeat-x;
   margin:0% 0%;
-  padding : 0.6em;
   font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;
   font-size:0.8em;
 }
 #page {
   background-color:white;
-  width : 65%;
   margin : auto ;
   border : 0.2em solid black;
-  padding : 0.1em;
 }
 #entete{
-  background-color:rgb(72,198,236);
-	color : #980101;
-	border: solid 0.1em #980101;
+  background-color:rgb(185, 176, 168);
+	color : #080808;
+	border: solid 0.1em #080808;
 	height: 154px;
 	padding: 0em;
 	border-collapse: separate;
@@ -227,7 +223,7 @@ taille de caract�res l�g�rement sup�rieure � la normale */
 
 /* Style pour les lignes d'en-t�te des tableaux */
 #contenu th {  
-   background-color:#77AADD;
+   background-color:#7b7e81;
    height:21px;
    text-align:left;
    vertical-align:top;
